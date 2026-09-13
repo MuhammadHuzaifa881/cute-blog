@@ -12,7 +12,7 @@ const Nav = () => (
         </p>
         <a
           className="nav-link btn btn-dark text-white"
-          href="https://github.com/mesinkasir/cuteblogreact"
+          href={`${process.env.REACT_APP_GITHUB_URL}`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,12 +26,6 @@ const Nav = () => (
           </svg>{' '}
           Github
         </a>{' '}
-        <a
-          className="nav-link btn btn-dark text-white"
-          href="https://www.fiverr.com/creativitas/create-your-website-with-new-technology"
-        >
-          👉 Hire Me
-        </a>
       </nav>
     ))}
   </>
